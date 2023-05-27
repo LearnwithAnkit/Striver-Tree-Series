@@ -34,6 +34,6 @@ Traversal Techniques-
 -> Inorder Traversal.(use Queue and uses iterative approach)
 
 2.DFS(Depth Frist Search)-(mostly implemented using recursion)
--> Inoder (left root right)
+-> Inorder (left root right)
 ->Preoder(root left right)
 ->PostOrder(left right root)
