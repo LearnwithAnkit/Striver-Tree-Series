@@ -27,3 +27,13 @@ Types Of Binary Tree-
 4.Balanced Binary Tree-height of tree can be at max log(n) nodes
 
 5.Degenerate Binary Tree-Skew tree every bode have a single children.
+
+Traversal Techniques-
+
+1.BFS(Breadth First Search)-
+-> Inorder Traversal.(use Queue and uses iterative approach)
+
+2.DFS(Depth Frist Search)-(mostly implemented using recursion)
+-> Inoder (left root right)
+->Preoder(root left right)
+->PostOrder(left right root)
