@@ -17,7 +17,9 @@ Types Of Binary Tree-
 1.Full Binary Tree-Either has 0 or 2 Children
 
 2.Complete Binary Tree-
+
 ->All levels are completly Filled except the last level
+
 ->the last level has all Nodes in as left as possible.
 
 3.Perfect Binary Tree-all leaf nodes are the same level.
