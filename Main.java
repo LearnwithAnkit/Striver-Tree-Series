@@ -1,8 +1,7 @@
 // import TREE.Traversals.*;
 public class Main {
-    public static void main(String args[])
-    {
-        TreeNode root=new TreeNode(10);
+public static TreeNode CreateTree() {
+    TreeNode root=new TreeNode(10);
         TreeNode node2=new TreeNode(20);
         TreeNode node3=new TreeNode(30);
         TreeNode node4=new TreeNode(40);
@@ -16,6 +15,11 @@ public class Main {
         node2.right=node5;
         node3.left=node7;
         node3.right=node6;
+        return root;
+}
+    public static void main(String args[])
+    {
+        TreeNode root=CreateTree();
         System.out.println("Inorder");
         Traversals.inorder(root); 
         System.out.println("\nPostOrder");
@@ -28,8 +32,8 @@ public class Main {
         IterativeTraversal.preorder(root);
         System.out.println("\nIterative inorder");
         IterativeTraversal.inorder(root);
-        
-        
+        System.out.println("\nHeight of Tree is: "+Height.heightOfTree(root));
+ 
     }
     
 }
