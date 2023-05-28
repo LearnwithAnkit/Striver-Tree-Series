@@ -32,7 +32,10 @@ public static TreeNode CreateTree() {
         IterativeTraversal.preorder(root);
         System.out.println("\nIterative inorder");
         IterativeTraversal.inorder(root);
+        System.out.println("\nIterative postorder");
+        IterativeTraversal.postorder(root);
         System.out.println("\nHeight of Tree is: "+Height.heightOfTree(root));
+        System.out.println("The given binary tree is: "+(CheckBalancedBinaryTree.isBalanced(root)?"Balanced":"Not Balancec"));
  
     }
     

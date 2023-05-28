@@ -36,7 +36,6 @@ public static void Postorder(TreeNode root)
         {
             return;
         }
-        
         inorder(root.left);
         inorder(root.right);
         System.out.print(root.data+" ");
