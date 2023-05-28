@@ -1,4 +1,5 @@
 // import TREE.Traversals.*;
+import java.util.*;
 public class Main {
 public static TreeNode CreateTree() {
     TreeNode root=new TreeNode(10);
@@ -46,6 +47,10 @@ public static TreeNode CreateTree() {
         TreeNode root2=new TreeNode(0);
         System.out.println("Same tree? "+(SameTreeOrNot.sametree(root, root)?"Yes":"No"));
         System.out.println("Same tree? "+(SameTreeOrNot.sametree(root, root2)?"Yes":"No"));
+        ArrayList<ArrayList<Integer>> zz=new ArrayList<>();
+        Zig_Zag_Traversal.zigzag(root, zz);
+        System.out.println("zig-zag traversal:-"+zz);
+
 
  
     }
