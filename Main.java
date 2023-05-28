@@ -35,7 +35,11 @@ public static TreeNode CreateTree() {
         System.out.println("\nIterative postorder");
         IterativeTraversal.postorder(root);
         System.out.println("\nHeight of Tree is: "+Height.heightOfTree(root));
-        System.out.println("The given binary tree is: "+(CheckBalancedBinaryTree.isBalanced(root)?"Balanced":"Not Balancec"));
+        System.out.println("The given binary tree is: "+(CheckBalancedBinaryTree.isBalanced(root)?"Balanced":"Not Balanced"));
+        System.out.println("The given binary tree is: "+(CheckBalancedBinaryTree.isBalancedOptimized(root)?"Balanced":"Not Balanced"));
+        System.out.println("Diameter of Tree is: "+Diameter.diameter(root));
+        System.out.println("Diameter of Tree is: "+Diameter.diameterOptimized(root));
+        System.out.println("Max path sum of Tree is: "+MaxPathSum.findmaxpath(root,new int[]{0}));
  
     }
     
