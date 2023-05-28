@@ -50,6 +50,13 @@ public static TreeNode CreateTree() {
         ArrayList<ArrayList<Integer>> zz=new ArrayList<>();
         Zig_Zag_Traversal.zigzag(root, zz);
         System.out.println("zig-zag traversal:-"+zz);
+        ArrayList<ArrayList<Integer>> zzo=new ArrayList<>();
+        Zig_Zag_Traversal.zigzag(root, zzo);
+        System.out.println("zig-zag traversal:-"+zzo);
+        ArrayList<Integer> bd=new ArrayList<>();
+        BoundaryTraversal.boundaryTraversal(root, bd);
+        System.out.println("Boundary traversal:-"+bd);
+        
 
 
  
