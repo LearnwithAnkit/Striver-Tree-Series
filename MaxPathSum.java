@@ -6,9 +6,11 @@ public class MaxPathSum
         {
             return 0;
         }
-        int lv=findmaxpath(root.left, max);
-        int rv=findmaxpath(root.right, max);
-        max[0]=Math.max(max[0],Math.max(lv,rv)+root.data);
+        //ignore the negative path sum it will anyway decrese the overall path sum
+        int lv=Math.max(0,findmaxpath(root.left, max));
+        int rv=Math.max(0,findmaxpath(root.right, max));
+        max[0]=Math.max(max[0],lv+rv+root.data);
+        // System.out.print(lv+" "+rv+"->"+max[0]+"\n");
         return root.data+Math.max(lv,rv);
     }
 }

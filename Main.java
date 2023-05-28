@@ -39,7 +39,14 @@ public static TreeNode CreateTree() {
         System.out.println("The given binary tree is: "+(CheckBalancedBinaryTree.isBalancedOptimized(root)?"Balanced":"Not Balanced"));
         System.out.println("Diameter of Tree is: "+Diameter.diameter(root));
         System.out.println("Diameter of Tree is: "+Diameter.diameterOptimized(root));
-        System.out.println("Max path sum of Tree is: "+MaxPathSum.findmaxpath(root,new int[]{0}));
+
+        int maxpath[]=new int[]{0};
+        MaxPathSum.findmaxpath(root,maxpath);
+        System.out.println("Max path sum of Tree is: "+maxpath[0]);
+        TreeNode root2=new TreeNode(0);
+        System.out.println("Same tree? "+(SameTreeOrNot.sametree(root, root)?"Yes":"No"));
+        System.out.println("Same tree? "+(SameTreeOrNot.sametree(root, root2)?"Yes":"No"));
+
  
     }
     
