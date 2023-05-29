@@ -20,7 +20,22 @@ public static TreeNode CreateTree() {
 }
     public static void main(String args[])
     {
-        TreeNode root=CreateTree();
+        // TreeNode root=CreateTree();
+        TreeNode root=new TreeNode(10);
+        TreeNode node2=new TreeNode(20);
+        TreeNode node3=new TreeNode(30);
+        TreeNode node4=new TreeNode(40);
+        TreeNode node5=new TreeNode(50);
+        TreeNode node6=new TreeNode(60);
+        TreeNode node7=new TreeNode(70);
+        // Traversals tv=new Traversals();
+        root.left=node2;
+        root.right=node3;
+        node2.left=node4;
+        node2.right=node5;
+        node3.left=node7;
+        node3.right=node6;
+
         System.out.println("Inorder");
         Traversals.inorder(root); 
         System.out.println("\nPostOrder");
@@ -75,6 +90,7 @@ public static TreeNode CreateTree() {
         ArrayList<Integer> roottoPath=new ArrayList<>();
         RootToNode.roottonodepath(root, roottoPath,70);
         System.out.println("Root to Node path:-"+roottoPath);
+        System.out.println("LCA of 60 and 70 is:-"+LCA.lca(root,node6, node7).data);
         
     }
     

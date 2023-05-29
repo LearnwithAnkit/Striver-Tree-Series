@@ -1,5 +1,6 @@
 import java.util.*;
 public class RootToNode {
+    //TC:O(N) SC:O(H)
     public static boolean roottonodepath(TreeNode root,ArrayList<Integer> ds,int x)
     {
     if(root==null)
