@@ -1,5 +1,5 @@
 import java.util.*;
-public class TopVeiw {
+public class BottomView {
     public static class pair
     {   
         TreeNode node;
@@ -11,7 +11,7 @@ public class TopVeiw {
         }
     }
     //TC:O(N) SC:O(N)
-    public static ArrayList<Integer> topview(TreeNode root,ArrayList<Integer> ds)
+    public static ArrayList<Integer> bottomview(TreeNode root,ArrayList<Integer> ds)
     {
         Map<Integer,Integer> map=new TreeMap<>();
         Queue<pair> q=new LinkedList<>();
@@ -21,10 +21,7 @@ public class TopVeiw {
             pair p=q.remove();
             TreeNode node=p.node;
             int level=p.level;
-            if(!map.containsKey(level))
-            {
                 map.put(level,node.data);
-            }
             if(node.left!=null)
             {
                 q.add(new pair(node.left,level-1));
