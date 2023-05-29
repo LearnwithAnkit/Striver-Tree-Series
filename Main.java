@@ -64,8 +64,13 @@ public static TreeNode CreateTree() {
         System.out.println("top view:-"+tv);
         ArrayList<Integer> bv=new ArrayList<>();
         bv=BottomView.bottomview(root, bv);
-        System.out.println("top view:-"+bv);
-
+        System.out.println("bottom view:-"+bv);
+        ArrayList<Integer> rv=new ArrayList<>();
+        RightView.rightview(root, rv,0);
+        System.out.println("right view:-"+rv);
+        ArrayList<Integer> lv=new ArrayList<>();
+        LeftView.leftview(root, lv,0);
+        System.out.println("left view:-"+lv);
     }
     
 }

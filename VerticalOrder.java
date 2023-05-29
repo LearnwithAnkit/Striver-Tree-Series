@@ -40,7 +40,7 @@ public class VerticalOrder {
                 q.offer(new Tuple(node.right, row + 1, col + 1));
             }
         }
-        System.out.println(map);
+        // System.out.println(map);
         for (TreeMap < Integer, PriorityQueue < Integer >> ys: map.values()) {
             ds.add(new ArrayList < > ());
             for (PriorityQueue < Integer > nodes: ys.values()) {
