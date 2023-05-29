@@ -72,6 +72,9 @@ public static TreeNode CreateTree() {
         LeftView.leftview(root, lv,0);
         System.out.println("left view:-"+lv);
         System.out.println("isSymmetrical?-"+CheckForSymmetrical.isSymmetrical(root));
+        ArrayList<Integer> roottoPath=new ArrayList<>();
+        RootToNode.roottonodepath(root, roottoPath,70);
+        System.out.println("Root to Node path:-"+roottoPath);
         
     }
     
