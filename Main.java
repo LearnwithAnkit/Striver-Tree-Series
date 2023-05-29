@@ -56,10 +56,13 @@ public static TreeNode CreateTree() {
         ArrayList<Integer> bd=new ArrayList<>();
         BoundaryTraversal.boundaryTraversal(root, bd);
         System.out.println("Boundary traversal:-"+bd);
-        
+        ArrayList<ArrayList<Integer>> vo=new ArrayList<>();
+        VerticalOrder.verticalorder(root,vo);
+        System.out.println("Vertical traversal:-"+vo);
+       ArrayList<Integer> tv=new ArrayList<>();
+        tv=TopVeiw.topview(root, tv);
+        System.out.println("top view:-"+tv);
 
-
- 
     }
     
 }
