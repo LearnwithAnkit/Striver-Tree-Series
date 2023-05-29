@@ -1,4 +1,5 @@
 public class LCA {
+    //TC:O(N) && SC:O(H)
     public static TreeNode lca(TreeNode root,TreeNode p,TreeNode q)
     {
         if(root==null||root==p||root==q)

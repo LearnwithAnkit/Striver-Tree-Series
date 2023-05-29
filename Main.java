@@ -91,6 +91,9 @@ public static TreeNode CreateTree() {
         RootToNode.roottonodepath(root, roottoPath,70);
         System.out.println("Root to Node path:-"+roottoPath);
         System.out.println("LCA of 60 and 70 is:-"+LCA.lca(root,node6, node7).data);
+        System.out.println("width of tree is:-"+WidthOfBT.width(root));
+        ChildrenSumProperty.csm(root);
+        Traversals.LevelOrder(root);
         
     }
     
