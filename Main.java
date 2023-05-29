@@ -71,6 +71,8 @@ public static TreeNode CreateTree() {
         ArrayList<Integer> lv=new ArrayList<>();
         LeftView.leftview(root, lv,0);
         System.out.println("left view:-"+lv);
+        System.out.println("isSymmetrical?-"+CheckForSymmetrical.isSymmetrical(root));
+        
     }
     
 }

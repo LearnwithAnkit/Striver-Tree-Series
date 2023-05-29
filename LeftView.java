@@ -1,5 +1,6 @@
 import java.util.*;
 public class LeftView {
+    //TC-O(N) SC-O(H)
     public static void leftview(TreeNode root,ArrayList<Integer> ds,int level)
     {
         if(root==null)

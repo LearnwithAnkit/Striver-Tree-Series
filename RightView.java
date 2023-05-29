@@ -1,5 +1,6 @@
 import java.util.*;
 public class RightView {
+    //TC-O(N) SC-O(H)
     public static void rightview(TreeNode root,ArrayList<Integer> ds,int level)
     {
         if(root==null)
